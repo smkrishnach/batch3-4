@@ -1,0 +1,15 @@
+{
+	"name": "adfmurali1996",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ec77a05c-c33c-478e-b936-44d19d01738b",
+		"tenantId": "8d6398f2-e8c9-40cb-ab64-740894c1ff98"
+	}
+}
