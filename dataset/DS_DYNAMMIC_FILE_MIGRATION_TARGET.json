@@ -1,0 +1,30 @@
+{
+	"name": "DS_DYNAMMIC_FILE_MIGRATION_TARGET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_Adls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TargetFileName": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Adls_dataset"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().TargetFileName",
+					"type": "Expression"
+				},
+				"folderPath": "sourceProcessedfilesmk",
+				"fileSystem": "containermk"
+			}
+		}
+	}
+}
