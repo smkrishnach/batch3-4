@@ -150,19 +150,13 @@
 							"userProperties": [],
 							"typeProperties": {
 								"dataset": {
-									"referenceName": "DS_DYNAMMIC_FILE_MIGRATION_TARGET",
+									"referenceName": "DS_DYNAMMIC_FILE_MIGRATION",
 									"type": "DatasetReference",
 									"parameters": {
-										"TargetFileName": {
+										"FileName": {
 											"value": "@item().name",
 											"type": "Expression"
 										}
-									}
-								},
-								"logStorageSettings": {
-									"linkedServiceName": {
-										"referenceName": "Ls_Adls",
-										"type": "LinkedServiceReference"
 									}
 								},
 								"enableLogging": true,
