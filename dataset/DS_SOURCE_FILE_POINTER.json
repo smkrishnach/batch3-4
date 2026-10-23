@@ -22,6 +22,7 @@
 					"value": "@dataset().SrcFileName",
 					"type": "Expression"
 				},
+				"folderPath": "source",
 				"fileSystem": "containermk"
 			}
 		}
