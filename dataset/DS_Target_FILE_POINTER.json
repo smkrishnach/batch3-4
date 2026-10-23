@@ -1,0 +1,36 @@
+{
+	"name": "DS_Target_FILE_POINTER",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Ls_Adls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TrgFileName": {
+				"type": "string"
+			},
+			"TrgFolderName": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Adls_dataset"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().TrgFileName",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().TrgFolderName",
+					"type": "Expression"
+				},
+				"fileSystem": "containermk"
+			}
+		}
+	}
+}
