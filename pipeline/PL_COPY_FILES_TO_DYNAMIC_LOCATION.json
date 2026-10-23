@@ -32,7 +32,7 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "ForEachfile",
 				"type": "ForEach",
 				"dependsOn": [
 					{
@@ -58,7 +58,7 @@
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@equals(item(), 'file')",
+									"value": "@equals(item().type, 'file')",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
