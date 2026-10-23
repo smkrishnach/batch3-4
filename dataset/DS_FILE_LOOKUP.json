@@ -5,13 +5,15 @@
 			"referenceName": "Ls_Adls",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Adls_dataset"
+		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "source",
-				"fileSystem": "containermk"
+				"fileSystem": "bronze-container"
 			}
 		}
 	}
