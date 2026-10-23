@@ -29,7 +29,7 @@
 					"value": "@dataset().TrgFolderName",
 					"type": "Expression"
 				},
-				"fileSystem": "containermk"
+				"fileSystem": "bronze-container"
 			}
 		}
 	}
