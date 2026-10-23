@@ -32,7 +32,7 @@
 				}
 			},
 			{
-				"name": "ForEachfile",
+				"name": "ForEachFile",
 				"type": "ForEach",
 				"dependsOn": [
 					{
@@ -48,17 +48,16 @@
 						"value": "@activity('GetMetadatainfo').output.childItems",
 						"type": "Expression"
 					},
-					"isSequential": false,
 					"batchCount": 10,
 					"activities": [
 						{
-							"name": "IfTypeisFile",
+							"name": "IfTypeIsFile",
 							"type": "IfCondition",
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
 								"expression": {
-									"value": "@equals(item().type, 'file')",
+									"value": "@equals(item().type, 'File')",
 									"type": "Expression"
 								},
 								"ifTrueActivities": [
@@ -115,7 +114,7 @@
 														"type": "Expression"
 													},
 													"TrgFolderName": {
-														"value": "@split(item().name, '.')[1]",
+														"value": "@split(item().name,'.')[1]",
 														"type": "Expression"
 													}
 												}
