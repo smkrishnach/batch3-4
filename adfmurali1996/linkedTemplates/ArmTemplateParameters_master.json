@@ -5,8 +5,20 @@
 		"factoryName": {
 			"value": "adfmurali1996"
 		},
+		"LS_AZURE_SQL_DATABASE_password": {
+			"value": ""
+		},
 		"Ls_Adls_accountKey": {
 			"value": ""
+		},
+		"LS_AZURE_SQL_DATABASE_properties_typeProperties_server": {
+			"value": "muralik.database.windows.net"
+		},
+		"LS_AZURE_SQL_DATABASE_properties_typeProperties_database": {
+			"value": "muralidb89"
+		},
+		"LS_AZURE_SQL_DATABASE_properties_typeProperties_userName": {
+			"value": "murali"
 		},
 		"Ls_Adls_properties_typeProperties_url": {
 			"value": "https://samurali.dfs.core.windows.net/"
